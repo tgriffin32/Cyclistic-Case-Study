@@ -1,0 +1,48 @@
+---
+title: "Cyclistic Data Changelog"
+author: "Toby Griffin"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: yes
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Changelog
+This file contains the notable changes to the data used in the project. 
+
+
+### (02-08-2023)
+
+##### New
+- Added column ride_length to calculate bike trip length formatted as HH:MM:SS.
+- Added column day_of_week to store day of week trip was taken formatedd as an integer 1 = Sunday, 2 = Monday...
+
+##### Changes
+-  changed column header to consistent format using underscores between words
+
+##### Fixes
+
+
+### (02-09-2023)
+
+##### NEW
+
+##### CHANGES
+- Changed column trip_duration to trip_duration_sec to be more descriptive
+
+##### FIXES
+- Removed duplicates and NULL values of trip_id
+
+
+### (02-10-2023)
+
+##### CHANGES
+- Changed format of start_time and end_time from character to data time
+- Changed format of trip_duration_seconds from chr to numeric format
+- Changed ride_length column name to ride_length_min and converted it from chr format to numeric for easier calculations
+
